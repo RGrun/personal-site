@@ -1,0 +1,55 @@
+
+Homepage:
+    Hero banner:
+        "Give me a challenge"
+        Welcome message, name
+        -> full-stack web developer
+        -> android developer
+        -> Linux administrator
+
+    Intro:
+        short background
+        polyglot, multi-paradigm programmer
+        emphasize self-taughtness
+        can learn new languages and frameworks quickly
+        eager to improve my software engineering skills
+        mention something about writing
+
+    Flex boxes:
+        "Languages I know"
+        -> Java
+        -> Clojure
+        -> PHP
+        -> Python
+        -> JavaScript
+        -> C/C++
+        -> HTML/SCSS
+        -> Shell scripts
+        -> 6502
+
+    Vertical Tabs:
+        "Technologies"
+        -> Git
+        -> Web frameworks (Django, Drupal, Ring, Bottle, etc...)
+        -> CSS frameworks (Bootstrap, Foundation, Neat)
+        -> Web Server software (Apache / Nginx)
+        -> Responsive Design
+        -> Material Design
+        -> Caching software (varnish)
+        -> libGDX / OpenGL ES (1.0)
+        -> Build tools (Maven / Gradle)
+        -> HTTPS (SSL)
+        -> jQuery
+        -> RESTful APIs (creating and using)
+
+Projects:
+    Malbum
+    Lunar Invasion
+    ADC / Drupal
+    ADC Spidering
+    Athena
+
+Resume
+
+Contact
+    
