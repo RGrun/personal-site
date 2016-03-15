@@ -20,6 +20,7 @@ Homepage:
         -> Java
         -> Clojure
         -> PHP
+        -> SQL
         -> Python
         -> JavaScript
         -> C/C++
