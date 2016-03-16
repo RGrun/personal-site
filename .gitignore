@@ -1,6 +1,8 @@
 /target
 /resources/public/node_modules
-/resources/public/scss
+/resources/public/scss/base
+/resources/public/scss/bourbon
+/resources/public/scss/neat
 /resources/public/Gulpfile.js
 /lib
 /classes
