@@ -9,6 +9,8 @@
     <link href='https://fonts.googleapis.com/css?family=Asap|Roboto:700' rel='stylesheet' type='text/css'>
 <body>
 
+<a name="top"></a>
+
 {% block menu %}
 <header class="navigation" role="banner">
     <div class="navigation-wrapper">
@@ -18,9 +20,25 @@
         <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
         <nav role="navigation">
             <ul id="js-navigation-menu" class="navigation-menu show">
-                <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">Projects</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">Resume</a></li>
+                <li class="nav-link"><a href="/">Home</a></li>
+                <li class="nav-link more"><a href="javascript:void(0)">Skills</a>
+                    <ul class="submenu">
+                        <li><a {% if home %} onclick='scrollToAnchor("languages");' href="javascript:void(0)"
+                               {% else %} href="/#languages" {% endif %} >Languages</a></li>
+                        <li><a {% if home %} onclick='scrollToAnchor("techs");' href="javascript:void(0)"
+                               {% else %} href="/#techs" {% endif %} >Technologies</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-link more"><a href="javascript:void(0)">Projects</a>
+                    <ul class="submenu">
+                        <li><a  href="/projects/malbum">Malbum</a></li>
+                        <li><a  href="/projects/lunar-invasion">Lunar Invasion</a></li>
+                        <li><a  href="/projects/adc">Accident Data Center</a></li>
+                        <li><a  href="/projects/athena">Athena</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="/resume">Resume</a></li>
                 <!--<li class="nav-link more"><a href="javascript:void(0)">More</a>
                     <ul class="submenu">
                         <li><a href="javascript:void(0)">Submenu Item</a></li>
@@ -44,7 +62,6 @@
     </div>
 </header>
 
-
 {% endblock %}
 
 {% block hero %}
@@ -61,44 +78,31 @@
             <h1>And he wants a challenge!</h1>
         </div>
     </div>
-
-
-
 </div>
 {% endblock %}
 
-
 {% block content %}
 {% endblock %}
-
 
 {% block footer %}
 
 <footer class="footer-2" role="contentinfo">
     <div class="footer-logo">
-        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+        <!--<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">-->
     </div>
     <ul>
-        <li><a href="javascript:void(0)">About</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
-        <li><a href="javascript:void(0)">Products</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/resume">Resume</a></li>
     </ul>
 
     <div class="footer-secondary-links">
         <ul>
-            <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+            <li><a onclick="scrollToAnchor('top');">Back to Top</a></li>
         </ul>
 
         <ul class="footer-social">
-            <li><a href="javascript:void(0)">
-                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
-            </a></li>
-            <li><a href="javascript:void(0)">
-                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
-            </a></li>
-            <li><a href="javascript:void(0)">
-                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+            <li><a href="https://github.com/RGrun">
+                <img src="/img/GitHub-Mark-Light-64px.png" alt="github">
             </a></li>
         </ul>
     </div>
