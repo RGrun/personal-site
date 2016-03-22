@@ -780,14 +780,16 @@ header.navigation {
   
   .bg__intro, /*.bg__second*/ {
     background-image : url(
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg"
+      //"https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg"
+        "/img/html_banner.jpg"
     );
   }
   
   .bg__second {
         max-width: none !important;
          background-image : url(
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax2.jpg"
+      //"https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax2.jpg"
+        "/img/js_banner.jpg"
     );
   }
   
