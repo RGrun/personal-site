@@ -29,7 +29,7 @@ header.navigation {
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
-  $navigation-background: $dark-gray;
+  $navigation-background: rgb(35, 57, 57);
   $navigation-color: transparentize(white, 0.3);
   $navigation-color-hover: white;
   $navigation-height: 60px;
@@ -365,7 +365,7 @@ header.navigation {
   $action-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $footer-background: desaturate(darken($action-color, 20%), 30%);
+  $footer-background:  rgb(35, 57, 57);
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
@@ -374,6 +374,8 @@ header.navigation {
   padding: $base-spacing;
   width: 100%;
   display: inline-block;
+  position: relative;
+  bottom: -3px;
 
   .footer-logo {
     margin-right: 1em;
@@ -738,7 +740,7 @@ header.navigation {
     
     position: relative;
     top: 4%;
-    background: rgba(128, 0, 128, 0.69) none repeat scroll 0% 0%;
+    background: rgba(65,106,106,0.93) none repeat scroll 0% 0%;
     display: inline-block;
     padding: 2rem;
     border-radius: 2rem;
@@ -780,16 +782,21 @@ header.navigation {
   
   .bg__intro, /*.bg__second*/ {
     background-image : url(
-      //"https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg"
-        "/img/html_banner.jpg"
+        "/img/html_banner2.jpg"
     );
   }
   
   .bg__second {
+      max-width: none !important;
+         background-image : url(
+        "/img/js_banner.jpg"
+    );
+  }
+  
+  .bg__third {
         max-width: none !important;
          background-image : url(
-      //"https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax2.jpg"
-        "/img/js_banner.jpg"
+            "/img/html_banner.jpg"
     );
   }
   
