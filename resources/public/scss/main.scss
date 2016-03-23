@@ -1,8 +1,8 @@
 @import "bourbon/bourbon.scss";
 @import "neat/neat.scss";
 
-$light-purple: rgba(91, 65, 106, 0.95) none repeat scroll 0% 0%;
-$dark-purple: #332339;
+$primary-color: rgba(101, 100, 102, 0.95) none repeat scroll 0% 0%;
+$secondary-color: #201F21;
 
 body { 
     margin: 0; 
@@ -32,7 +32,7 @@ header.navigation {
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
-  $navigation-background: $dark-purple;
+  $navigation-background: $secondary-color;
   $navigation-color: transparentize(white, 0.3);
   $navigation-color-hover: white;
   $navigation-height: 60px;
@@ -368,7 +368,7 @@ header.navigation {
   $action-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $footer-background:  $dark-purple;
+  $footer-background:  $secondary-color;
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
@@ -743,12 +743,12 @@ header.navigation {
     
     position: relative;
     top: 4%;
-    background: $light-purple;
+    background: $primary-color;
     display: inline-block;
     padding: 2rem;
     border-radius: 3px;
     
-    color: wheat;
+    color: white;
     
     h1 {
             margin: 0;
@@ -815,14 +815,14 @@ header.navigation {
   
   .parallax-overlay {
         display: inline-block;
-        background: $light-purple;
+        background: $primary-color;
         border-radius: 3px;
         font-size: 2rem;
         position: relative;
         top: 6rem;
         padding: 1rem;
         
-        color: wheat;
+        color: white;
 
   }
 }
