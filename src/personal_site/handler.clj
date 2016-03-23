@@ -20,4 +20,5 @@
 (def app
   (-> (routes home-routes app-routes)
       (handler/site)
+      (wrap-resource "public")
       (wrap-base-url)))
