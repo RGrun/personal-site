@@ -1,6 +1,9 @@
 @import "bourbon/bourbon.scss";
 @import "neat/neat.scss";
 
+$light-purple: rgba(91, 65, 106, 0.95) none repeat scroll 0% 0%;
+$dark-purple: #332339;
+
 body { 
     margin: 0; 
     
@@ -29,7 +32,7 @@ header.navigation {
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
-  $navigation-background: rgb(35, 57, 57);
+  $navigation-background: $dark-purple;
   $navigation-color: transparentize(white, 0.3);
   $navigation-color-hover: white;
   $navigation-height: 60px;
@@ -365,7 +368,7 @@ header.navigation {
   $action-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $footer-background:  rgb(35, 57, 57);
+  $footer-background:  $dark-purple;
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
@@ -740,10 +743,10 @@ header.navigation {
     
     position: relative;
     top: 4%;
-    background: rgba(65,106,106,0.93) none repeat scroll 0% 0%;
+    background: $light-purple;
     display: inline-block;
     padding: 2rem;
-    border-radius: 2rem;
+    border-radius: 3px;
     
     color: wheat;
     
@@ -812,7 +815,7 @@ header.navigation {
   
   .parallax-overlay {
         display: inline-block;
-        background: rgba(65,106,106,0.93) none repeat scroll 0% 0%;
+        background: $light-purple;
         border-radius: 3px;
         font-size: 2rem;
         position: relative;
