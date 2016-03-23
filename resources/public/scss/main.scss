@@ -807,5 +807,15 @@ header.navigation {
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg"
     ); 
   }
+  
+  .parallax-overlay {
+        display: inline-block;
+        background: rgba(65,106,106,0.93) none repeat scroll 0% 0%;
+        border-radius: 1rem;
+        font-size: 2rem;
+        position: relative;
+        top: 6rem;
+        padding: 1rem;
+  }
 }
 
