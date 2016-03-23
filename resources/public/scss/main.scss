@@ -38,7 +38,7 @@ header.navigation {
   $navigation-nav-button-border: 1px solid lighten($navigation-nav-button-background, 20%);
   $navigation-search-background: lighten($navigation-background, 5);
   $navigation-search-border: 1px solid darken($navigation-background, 5);
-  $navigation-active-link-color: transparentize(white, 0.5);
+  $navigation-active-link-color: transparentize(wheat, 0.5); //transparentize(white, 0.5);
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
   $horizontal-bar-mode: $large-screen;
@@ -745,6 +745,8 @@ header.navigation {
     padding: 2rem;
     border-radius: 2rem;
     
+    color: wheat;
+    
     h1 {
             margin: 0;
             font-size: 3rem;
@@ -811,11 +813,14 @@ header.navigation {
   .parallax-overlay {
         display: inline-block;
         background: rgba(65,106,106,0.93) none repeat scroll 0% 0%;
-        border-radius: 1rem;
+        border-radius: 3px;
         font-size: 2rem;
         position: relative;
         top: 6rem;
         padding: 1rem;
+        
+        color: wheat;
+
   }
 }
 
