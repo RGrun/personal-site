@@ -4,6 +4,54 @@
 $primary-color: rgba(101, 100, 102, 0.95) none repeat scroll 0% 0%;
 $secondary-color: #201F21;
 
+// mobile rules
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    .parallax {
+        display: none !important;
+    }
+    
+    
+    .mobile-title-1, .mobile-title-2, .mobile-title-3 {
+        display: block !important;
+        text-align: center;
+        background-image: url( "/img/html_banner2.jpg");   
+        
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+        color: white;
+        
+        
+        .mobile-inset {
+            background: $primary-color;
+            
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+                
+            ul {
+                text-align: initial !important;
+                display: inline-block;
+                font-size: 1.3rem;
+            }
+            
+        }
+    }
+    
+    .mobile-title-2 {
+            background-image: url( "/img/js_banner.jpg") !important;   
+    }
+    
+    .mobile-title-3 {
+            background-image: url( "/img/html_banner.jpg") !important;
+    }
+        
+        
+}
+
+
+
 body { 
     margin: 0; 
     
@@ -766,7 +814,7 @@ header.navigation {
   [class*="bg__"] {
     position : relative;
 
-    height : 50vh;
+    height : 50rem;
     
     max-height: 25rem;
     
@@ -785,7 +833,7 @@ header.navigation {
     height : 100vh;
   }
   
-  .bg__intro, /*.bg__second*/ {
+  .bg__intro, {
     background-image : url(
         "/img/html_banner2.jpg"
     );
