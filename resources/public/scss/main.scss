@@ -1,8 +1,12 @@
 @import "bourbon/bourbon.scss";
 @import "neat/neat.scss";
 
-$primary-color: rgba(101, 100, 102, 0.95) none repeat scroll 0% 0%;
+//$primary-color: rgba(101, 100, 102, 0.95) none repeat scroll 0% 0%;
 $secondary-color: #201F21;
+
+$primary-color: rgba(229, 231, 248, 0.9) none repeat scroll 0% 0%;
+$header-font-color: #0a244d;
+//$secondary-color: $header-font-color;
 
 // mobile rules
 
@@ -37,7 +41,8 @@ $secondary-color: #201F21;
             }
             
         }
-    }
+    }p
+
     
     .mobile-title-2 {
             background-image: url( "/img/js_banner.jpg") !important;   
@@ -796,7 +801,7 @@ header.navigation {
     padding: 2rem;
     border-radius: 3px;
     
-    color: white;
+    color: $header-font-color;
     
     h1 {
             margin: 0;
@@ -870,7 +875,7 @@ header.navigation {
         top: 6rem;
         padding: 1rem;
         
-        color: white;
+        color: $header-font-color;
 
   }
 }
