@@ -1,0 +1,78 @@
+{% extends "personal_site/views/templates/wrapper.html" %}
+
+{% block hero%}
+
+<div class="parallax">
+    <div class="bg__invasion">
+        <div class="parallax-inset">
+            <h1>Lunar Invasion</h1>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-title-1" style="display: none;">
+    <div class="mobile-inset">
+        <h1>Lunar Invasion</h1>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<section class="content">
+
+    <p>Lunar Invasion is a two-player action game for Android.
+        I led a team that designed, developed and built the game from scratch over an eight-month period in 2015. </p>
+
+    <p>The game was coded entirely from scratch in Java. It uses OpenGL ES for rendering, and has no other dependencies.</p>
+
+    <p>In the game, both players control a movable spaceship. They then battle it out, firing energy balls that bounce off walls.
+        The first player to drain the opponent’s life completely is the winner.
+        Players can choose from five distinct weapons, and collect power-ups from destructible terrain and moving satellites. </p>
+
+    <p>Lunar Invasion was released on <a href="https://play.google.com/store/apps/details?id=r3software.org.lunarinvasion">
+        Google Play</a> in October 2015 and costs $2.99.
+        Those wanting a demonstration of the game can get a free copy by contacting me directly.
+    </p>
+
+    <p>
+        There’s also a <a href="https://play.google.com/store/apps/details?id=r3software.org.lunarinvasionfree">
+        free demo version</a>.
+    </p>
+
+    <p>The development team consisted of:</p>
+
+    <table class="tables">
+        <tr>
+            <td>me (Richard Grunert)</td><td>Programmer</td>
+        </tr>
+        <tr>
+            <td>Chris Palmer</td><td>Art</td>
+        </tr>
+        <tr>
+            <td>Noel Abbott</td><td>Sound</td>
+        </tr>
+    </table>
+
+    <h2>Game Screenshots:</h2>
+
+    <div class="galleria">
+        <img src="/img/lunar-invasion/li-1.png">
+        <img src="/img/lunar-invasion/li-2.png">
+        <img src="/img/lunar-invasion/li-3.png">
+        <img src="/img/lunar-invasion/li-4.png">
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/nav.js"></script>
+<script src="/js/galleria/galleria-1.4.2.min.js"></script>
+<script>
+        Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+</script>
+{% endblock %}

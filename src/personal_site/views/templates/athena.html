@@ -1,0 +1,65 @@
+{% extends "personal_site/views/templates/wrapper.html" %}
+
+{% block hero%}
+
+<div class="parallax">
+    <div class="bg__athena">
+        <div class="parallax-inset">
+            <h1>Athena</h1>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-title-1" style="display: none;">
+    <div class="mobile-inset">
+        <h1>Athena</h1>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<section class="content">
+
+    <p>Athena was a scheduling system for drivers who delivered surgical trays on-demand to hospitals.
+        Most hospitals don’t keep every specific kind of surgical tray on-site,
+        and hire outside companies to deliver them when needed. </p>
+
+    <p>Organizing a bunch of drivers at a company like this isn’t an easy task.
+        Athena was meant to make that job as simple as possible. Drivers would log in and be able to
+        see how many trays they were scheduled to deliver that day, to where,
+        and when they would need to pick them up. It also featured a robust user account system.</p>
+
+    <p>Athena was the first real piece of software I was ever hired to write.
+        It was written entirely in PHP, and the only external library used was jQuery. </p>
+
+    <p>Unfortunately, the project was canceled after a few months of work due to funding problems.
+    </p>
+
+    <p>
+        You can see the project’s code at my <a href="https://github.com/RGrun/athena">GitHub</a>.
+    </p>
+
+
+    <h2>Development Screenshots:</h2>
+
+    <div class="galleria">
+        <img src="/img/athena/athena1.png">
+        <img src="/img/athena/athena2.png">
+        <img src="/img/athena/athena3.png">
+        <img src="/img/athena/athena4.png">
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/nav.js"></script>
+<script src="/js/galleria/galleria-1.4.2.min.js"></script>
+<script>
+        Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+</script>
+{% endblock %}

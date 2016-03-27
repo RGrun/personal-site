@@ -5,11 +5,16 @@
 (defn malbum-page []
   (layout/render "malbum.html" {:title "Malbum <~> Projects <~> Richard Grunert"}))
 
-(def project-routes
-  (context "/projects" []
-    (GET "/malbum" [] (malbum-page))
-;    (GET "/lunar-invasion" [] (lunar-invasion-page))
-;    (GET "/adc" [] (adc-page))
-;    (GET "/other-sites" (other-sites-page))
-;    (GET "/athena" [] (athena-page))
-    ))
+(defn lunar-invasion-page []
+  (layout/render "invasion.html" {:title "Lunar Invasion <~> Projects <~> Richard Grunert"}))
+
+(defn athena-page []
+  (layout/render "athena.html" {:title "Athena <~> Projects <~> Richard Grunert"}))
+
+(defroutes project-routes
+    (GET "/projects/lunar-invasion" [] (lunar-invasion-page))
+;    (GET "/projects/malbum" [] (malbum-page))
+;    (GET "/projects/adc" [] (adc-page))
+;    (GET "/projects/other-sites" (other-sites-page))
+    (GET "/projects/athena" [] (athena-page))
+    )
