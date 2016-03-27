@@ -33,44 +33,57 @@
 <section class="content">
 
     <p>
-        Hi! I'm Richard Grunert, a polyglot, multi-paradigm programmer who's eager to build amazing software and write beautiful code.
+        Hi! I'm Richard Grunert, a <em>polyglot, cross-paradigm programmer</em> who's eager to build amazing software and write beautiful code.
         I'm a passionate developer who's worked in multiple languages and with a number of very powerful tools
         -- and now I want to build something for you!
     </p>
+
+    <p>
+        You can check out some of my skills below:
+    </p>
+
+    <ul class="accordion-tabs">
+    <li class="tab-header-and-content">
+        <a href="javascript:void(0)" class="is-active tab-link">Full-Stack Web Developer</a>
+        <div class="tab-content">
+            <p> As a full-stack web developer, I've built complex websites featuring user accounts,
+                custom RESTful interfaces, complex database schemas and more.
+                Much of my work has been focused on maintaining <a href="/projects/adc">Accident Data Center</a>,
+                a Drupal site that averages about 30,000 visits per month.
+                I also designed and built <a href="/malbum">Malbum</a>, which is a bit like a private Instagram you can deploy yourself.</p>
+        </div>
+    </li>
+    <li class="tab-header-and-content">
+        <a href="javascript:void(0)" class="tab-link">Android Developer</a>
+        <div class="tab-content">
+            <p>As an Android developer, I wrote and published the game <a href="/projects/lunar-invasion">Lunar Invasion</a> in 2015.
+                I've also worked on a host of smaller apps which I've written for my own self-education,
+                including a native Android client for <a href="/malbum">Malbum</a> capable of displaying and uploading
+                images from phone to server and vice-versa.</p>
+        </div>
+    </li>
+    <li class="tab-header-and-content">
+        <a href="javascript:void(0)" class="tab-link">Linux Administrator</a>
+        <div class="tab-content">
+            <p>As a Linux administrator, I've set up, maintained and repaired servers and desktops running a variety of different distributions.
+                I run my own virtual private server (which this site is running on!) and am very comfortable on the command-line and with shell scripts.
+                I'm proficient with high-end web servers, and deploying open source software is a breeze.
+                I also work with Windows and OSX machines on a daily basis.</p>
+        </div>
+    </li>
+    </ul>
+
     <p>
         I thrive on facing new challenges and always relish the chance to learn a new tool or framework.
-        Each project is a new opportunity to expand my skillset, and I'm a very fast learner who can quickly make sense of vast technological complexity.
+        Each project is a new opportunity to expand my skillset, and I'm a very fast learner who
+        <em>can quickly make sense of vast technological complexity.</em>
         While I personally prefer functional programming languages, I'm also very comfortable working in an object-oriented style.
-
-    </p>
-    <p>
-        Most of my work thus far can be categorized into three main areas:
-        full-stack web development, Android development and Linux server administration.
-    </p>
-    <p>
-        As a full-stack web developer, I've built complex websites featuring user accounts, custom RESTful interfaces, complex database schemas and more.
-        Much of my work has been focused on maintaining Accident Data Center, a Drupal site that averages about 30,000 visits per month.
-        I also designed and built Malbum, which is a bit like a private Instagram you can deploy yourself.
     </p>
 
     <p>
-        As an Android developer, I wrote and published the game Lunar Invasion in 2015.
-        I've also worked on a host of smaller apps which I've written for my own self-education,
-        including a native Android client for Malbum capable of displaying and uploading images from phone to server and vice-versa.
-    </p>
-
-    <p>
-        As a Linux administrator, I've set up, maintained and repaired servers and desktops running a variety of different distributions.
-        I run my own virtual private server (which this site is running on!) and am very comfortable on the command-line and with shell scripts.
-        I'm proficient with high-end web servers, and deploying open source software is a breeze.
-        I also work with Windows and OSX machines on a daily basis.
-
-    </p>
-
-    <p>
-        The thing I want to emphasize most is that I'm always very eager to broaden my skillset.
+        The thing I want to emphasize most is that I'm always <em>very eager to broaden my skillset.</em>
         Check out the rest of this site to get an idea of things I've worked on in the past,
-        or, better yet, check out my resume or GitHub.
+        or, better yet, check out my <a href="/resume">resume</a> or <a href="http://github.com/Rgun">GitHub.</a>
     </p>
 
     <p>
@@ -79,7 +92,8 @@
 
     <p>
         I graduated with a Bachelor's from Western Washington University in 2013.
-        I'm also a published writer who's written for a large metropolitan weekly.
+        I'm also a published writer who's written for a <a href="http://www.wweek.com/search/richard+grunert/?q=richard+grunert">
+        large metropolitan weekly.</a>
     </p>
 </section>
 
@@ -329,4 +343,5 @@
 {% block scripts %}
 <script src="js/nav.js"></script>
 <script src="js/vertical_tabs.js"></script>
+<script src="js/accordion_tabs.js"></script>
 {% endblock %}
