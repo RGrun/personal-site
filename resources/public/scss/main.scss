@@ -803,7 +803,7 @@ header.navigation {
 .parallax-inset {
     
     position: relative;
-    top: 4%;
+    top: 7%;
     background: $primary-color;
     display: inline-block;
     padding: 2rem;
@@ -820,6 +820,8 @@ header.navigation {
             text-align: initial;
             display: inline-block;
             font-size: 2rem;
+            
+            list-style-image: url("/img/chevron-right.png");
     }
 }
 

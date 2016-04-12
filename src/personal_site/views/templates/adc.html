@@ -1,0 +1,59 @@
+{% extends "personal_site/views/templates/wrapper.html" %}
+
+{% block hero%}
+
+<div class="parallax">
+    <div class="bg__invasion">
+        <div class="parallax-inset">
+            <h1>Accident Data Center</h1>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-title-1" style="display: none;">
+    <div class="mobile-inset">
+        <h1>Accident Data Center</h1>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<section class="content">
+
+    <p><a href="http://accidentdatacenter.com">Accident Data Center</a> is a site that aggregates local news stories
+        regarding traffic accidents from around the United States.
+        I take care of the site on a day-to-day basis and implement features requested by the marketing team. Sometimes,
+        this involves writing custom PHP plugins; other times, it involves SCSS work. </p>
+
+    <p>Personal injury attorneys rent ad space from Accident Data Center by paying us a monthly fee.
+        The site also acts as a place for friends and relatives of those involved in accidents to gather and discuss what happened.</p>
+
+    <p>During the summer of 2015, I wrote a web spider that pulled the professional information for over
+        8,000 personal injury attorneys from a large online database.
+        We use this information to enrich the site’s city and accident report pages. You can find the spider's
+        source code <a href="https://github.com/RGrun/lawyer-crawl-python">here</a>.</p>
+
+    <p>The site is built using Drupal 7. On average, it gets between 10,000 and 30,000 hits per day.</p>
+
+
+    <h2>Site Screenshots:</h2>
+
+    <div class="galleria">
+        <img src="/img/adc/adc.png">
+        <img src="/img/adc/adc-directory.png">
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/nav.js"></script>
+<script src="/js/galleria/galleria-1.4.2.min.js"></script>
+<script>
+        Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+</script>
+{% endblock %}
