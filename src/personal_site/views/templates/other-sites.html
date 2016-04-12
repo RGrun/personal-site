@@ -1,0 +1,60 @@
+{% extends "personal_site/views/templates/wrapper.html" %}
+
+{% block hero%}
+
+<div class="parallax">
+    <div class="bg__invasion">
+        <div class="parallax-inset">
+            <h1>Other Sites</h1>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-title-1" style="display: none;">
+    <div class="mobile-inset">
+        <h1>Other Sites</h1>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<section class="content">
+
+    <p>During my time as a web developer I’ve built/configured a bunch of smaller websites for various clients.
+        Recently most of these have been for personal injury attorneys.
+        These sites were either built on commission for or rented out to attorneys.</p>
+
+    <p>I can code a site completely from scratch (like this one, for example),
+        but often I’ll opt to use a content-management system like Drupal to provide a solid foundation
+        – it saves me a lot of time when I don’t have to code a content-posting and login system from scratch every time.</p>
+
+    <p>I’ve done all of or a majority of the work on all the sites listed below:</p>
+
+    <ul>
+        <li><a href="http://washingtoninjury.com">washingtoninjury.com</a></li>
+        <li><a href="http://okc-injurylawyer.com">okc-injurylawyer.com</a></li>
+        <li><a href="http://injurylawyerga.com">injurylawyerga.com</a></li>
+    </ul>
+
+    <h2>Site Screenshots:</h2>
+
+    <div class="galleria">
+        <img src="/img/other-sites/injurylawyerga.png">
+        <img src="/img/other-sites/okcinjurylawyer.png">
+        <img src="/img/other-sites/washingtoninjury.png">
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/nav.js"></script>
+<script src="/js/galleria/galleria-1.4.2.min.js"></script>
+<script>
+        Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+</script>
+{% endblock %}
