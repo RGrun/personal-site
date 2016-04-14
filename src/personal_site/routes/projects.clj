@@ -19,7 +19,7 @@
 
 (defroutes project-routes
     (GET "/projects/lunar-invasion" [] (lunar-invasion-page))
-;    (GET "/projects/malbum" [] (malbum-page))
+    (GET "/projects/malbum" [] (malbum-page))
     (GET "/projects/adc" [] (adc-page))
     (GET "/projects/other-sites" [] (other-sites-page))
     (GET "/projects/athena" [] (athena-page))

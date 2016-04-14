@@ -1,0 +1,75 @@
+{% extends "personal_site/views/templates/wrapper.html" %}
+
+{% block hero%}
+
+<div class="parallax">
+    <div class="bg__invasion">
+        <div class="parallax-inset">
+            <h1>Malbum</h1>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-title-1" style="display: none;">
+    <div class="mobile-inset">
+        <h1>Malbum</h1>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<section class="content">
+
+    <p>Malbum is a bit like a tiny, private Instagram. It consists of two parts: a server written in Clojure
+        and an Android app written in Java. The server communicates with the app using JSON sent over a RESTful interface.
+        For its web front-end, the server uses Foundation 6; its back-end is a Postgres database.
+    </p>
+
+    <p>
+        Through the web interface, users can register accounts, upload photos, comment on photos,
+        browse albums and administrators can perform management tasks. Users can also browse albums and upload
+        photos directly from their phones using the Android app.
+    </p>
+
+    <p>Users can give photos custom names and descriptions. Commenting users can either be logged-in or anonymous.</p>
+
+    <p>I wrote Malbum in order to better understand building RESTful interfaces and image handling on Android.
+        From the beginning the focus was more on functionality than aesthetics, and there hans't been much visual work
+        done on the site or app.
+    </p>
+
+    <p>You can find the server running live <a href="https://malbum.furu.guru">here</a>. Feel free to make an account
+    and upload some photos of your own to test it out. The Android app isn't on the Play store, but I can send you the .apk
+    upon request (or just compile it yourself).</p>
+
+    <p>Check out the source code for the <a href="https://github.com/RGrun/malbum-server">server</a> and
+        <a href="https://github.com/RGrun/malbum-android">Android App</a> on my Github!</p>
+
+
+    <h2>Malbum Screenshots:</h2>
+
+    <div class="galleria">
+        <img src="/img/malbum/malbum-1.png" data-title="Browsing user albums">
+        <img src="/img/malbum/malbum-2.png" data-title="Single Image w/ comments">
+        <img src="/img/malbum/malbum-3.png" data-title="Admin menu">
+        <img src="/img/malbum/mobile-1.png" data-title="Mobile image view">
+        <img src="/img/malbum/mobile-2.png" data-title="Browsing user albums on mobile"
+             data-description="Thumbnails have had their quality reduced for transmission over the wire on the
+             mobile app.">
+        <img src="/img/malbum/mobile-3.png" data-title="Mobile latest imges">
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/nav.js"></script>
+<script src="/js/galleria/galleria-1.4.2.min.js"></script>
+<script>
+        Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+</script>
+{% endblock %}
