@@ -41,7 +41,7 @@ $header-font-color: #0a244d;
             }
             
         }
-    }p
+    }
 
     
     .mobile-title-2 {
@@ -82,6 +82,20 @@ a {
     max-width:69rem;
     margin: auto;
     padding: 1rem;
+}
+
+// resume page
+
+.header {
+            display: inline-block;
+            border-bottom: 2px solid black;
+            
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+    
+    h2 {
+            margin: 0;
+    }
 }
 
 
