@@ -9,7 +9,7 @@
 (defn resume-page []
       (layout/render "resume.html" {:title "Resume <~> Richard Grunert <~> Software Developer"}))
 
+
 (defroutes home-routes
   (GET "/" [] (home))
-  (GET "/resume" [] (resume-page))
-           )
+  (GET "/resume" [] (resume-page)))
